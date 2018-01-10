@@ -18,8 +18,8 @@
 		E0E422302005B81300262095 /* MD5Encryption.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E4222E2005B81300262095 /* MD5Encryption.m */; };
 		E0E422332005BC3400262095 /* AESEncryption.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E422322005BC3400262095 /* AESEncryption.m */; };
 		E0E422342005BC3400262095 /* AESEncryption.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E422322005BC3400262095 /* AESEncryption.m */; };
-		E0E422482005F28100262095 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E422462005F28000262095 /* GTMBase64.m */; };
-		E0E422492005F28100262095 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E422462005F28000262095 /* GTMBase64.m */; };
+		E0E4224E2006014000262095 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E4224C2006014000262095 /* GTMBase64.m */; };
+		E0E4224F2006014000262095 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = E0E4224C2006014000262095 /* GTMBase64.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,9 +50,9 @@
 		E0E4222E2005B81300262095 /* MD5Encryption.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MD5Encryption.m; sourceTree = "<group>"; };
 		E0E422312005BC3400262095 /* AESEncryption.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AESEncryption.h; sourceTree = "<group>"; };
 		E0E422322005BC3400262095 /* AESEncryption.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AESEncryption.m; sourceTree = "<group>"; };
-		E0E422452005F28000262095 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
-		E0E422462005F28000262095 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
-		E0E422472005F28000262095 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		E0E4224B2006014000262095 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		E0E4224C2006014000262095 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		E0E4224D2006014000262095 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +94,7 @@
 		E0E422062005B7B800262095 /* AES-MD5 */ = {
 			isa = PBXGroup;
 			children = (
-				E0E422442005F28000262095 /* GTMBase64 */,
+				E0E4224A2006014000262095 /* GTMBase64 */,
 				E0E4222C2005B7CA00262095 /* MD5 */,
 				E0E4222B2005B7C100262095 /* AES */,
 				E0E422072005B7B800262095 /* AppDelegate.h */,
@@ -137,15 +137,14 @@
 			path = MD5;
 			sourceTree = "<group>";
 		};
-		E0E422442005F28000262095 /* GTMBase64 */ = {
+		E0E4224A2006014000262095 /* GTMBase64 */ = {
 			isa = PBXGroup;
 			children = (
-				E0E422452005F28000262095 /* GTMBase64.h */,
-				E0E422462005F28000262095 /* GTMBase64.m */,
-				E0E422472005F28000262095 /* GTMDefines.h */,
+				E0E4224B2006014000262095 /* GTMBase64.h */,
+				E0E4224C2006014000262095 /* GTMBase64.m */,
+				E0E4224D2006014000262095 /* GTMDefines.h */,
 			);
-			name = GTMBase64;
-			path = "../../../Downloads/AES加解密(后台使用AES+CBC+NoPadding模式)/AES加解密(后台使用AES+CBC+NoPadding模式)/AES_SecurityUtil/GTMBase64";
+			path = GTMBase64;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,7 +250,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0E4220C2005B7B800262095 /* ViewController.m in Sources */,
-				E0E422482005F28100262095 /* GTMBase64.m in Sources */,
+				E0E4224E2006014000262095 /* GTMBase64.m in Sources */,
 				E0E422332005BC3400262095 /* AESEncryption.m in Sources */,
 				E0E422172005B7B800262095 /* main.m in Sources */,
 				E0E422092005B7B800262095 /* AppDelegate.m in Sources */,
@@ -266,7 +265,7 @@
 				E0E422212005B7B800262095 /* AES_MD5Tests.m in Sources */,
 				E0E422342005BC3400262095 /* AESEncryption.m in Sources */,
 				E0E422302005B81300262095 /* MD5Encryption.m in Sources */,
-				E0E422492005F28100262095 /* GTMBase64.m in Sources */,
+				E0E4224F2006014000262095 /* GTMBase64.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

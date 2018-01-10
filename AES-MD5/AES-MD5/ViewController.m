@@ -17,21 +17,21 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    NSString *key =  @"12345678";
     NSString *test = @"123456";
     for ( int i =0; i<100; i++) {
-        NSString * aes = [AESEncryption AES128Encrypt:test key:key];
+        NSString * aes = [AESEncryption AES128Encrypt:test ];
         NSLog(@"aes %@",aes);
         
-        NSString * aesDecrypt = [AESEncryption AES128Decrypt:aes key:key];
+        NSString * aesDecrypt = [AESEncryption AES128Decrypt:aes ];
         NSLog(@"aes %@",aesDecrypt);
         
         NSString * md5  = [MD5Encryption md5EncryptWithString:test];
         NSLog(@"md5 %@",md5);
     }
-   
+    
 }
 
 
 
 @end
+

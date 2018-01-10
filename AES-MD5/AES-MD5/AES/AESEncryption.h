@@ -10,9 +10,22 @@
 
 @interface AESEncryption : NSObject
 
-+(NSString *)AES128Encrypt:(NSString *)plainText key:(NSString *)key;
+/**
+ 加密
+ 
+ @param plainText 明文
+ @return 密文
+ */
++(NSString *)AES128Encrypt:(NSString *)plainText;
 
-+(NSString *)AES128Decrypt:(NSString *)encryptText key:(NSString *)key;
+/**
+ 解密
+ 
+ @param encryptText 密文
+ @return 明文
+ */
++(NSString *)AES128Decrypt:(NSString *)encryptText;
 
 
 @end
+

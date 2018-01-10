@@ -10,13 +10,15 @@
 #import <CommonCrypto/CommonCryptor.h>
 #import "GTMBase64.h"
 
+const static NSString *KEY = @"hxyl!@#$%^&*()_+";
+
 @implementation AESEncryption
 
-+(NSString *)AES128Encrypt:(NSString *)plainText key:(NSString *)key
++ (NSString *)AES128Encrypt:(NSString *)plainText
 {
     char keyPtr[kCCKeySizeAES128+1];
     memset(keyPtr, 0, sizeof(keyPtr));
-    [key getCString:keyPtr maxLength:sizeof(keyPtr) encoding:NSUTF8StringEncoding];
+    [KEY getCString:keyPtr maxLength:sizeof(keyPtr) encoding:NSUTF8StringEncoding];
     
     NSData* data = [plainText dataUsingEncoding:NSUTF8StringEncoding];
     NSUInteger dataLength = [data length];
@@ -45,13 +47,11 @@
 }
 
 
-+(NSString *)AES128Decrypt:(NSString *)encryptText key:(NSString *)key
++ (NSString *)AES128Decrypt:(NSString *)encryptText
 {
     char keyPtr[kCCKeySizeAES128 + 1];
     memset(keyPtr, 0, sizeof(keyPtr));
-    [key getCString:keyPtr maxLength:sizeof(keyPtr) encoding:NSUTF8StringEncoding];
-    
-    //NSData *data = [GTMBase64 decodeData:[encryptText dataUsingEncoding:NSUTF8StringEncoding]];
+    [KEY getCString:keyPtr maxLength:sizeof(keyPtr) encoding:NSUTF8StringEncoding];
     
     NSData *data=[self dataForHexString:encryptText];
     
@@ -158,3 +158,4 @@
 }
 
 @end
+
