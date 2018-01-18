@@ -1,0 +1,6 @@
+framework module ZBEncryption {
+  umbrella header "ZBEncryption.h"
+
+  export *
+  module * { export * }
+}
